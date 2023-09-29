@@ -1,0 +1,135 @@
+ERROR - 2022-12-13 16:58:18 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+ERROR - 2022-12-13 16:59:22 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+ERROR - 2022-12-13 17:19:31 --> Duplicate entry 'darth@theempire.com' for key 'email'
+ERROR - 2022-12-13 17:20:41 --> Duplicate entry 'darth@theempire.com' for key 'email'
+ERROR - 2022-12-13 17:20:51 --> Duplicate entry 'darth@theempire.com' for key 'email'
+ERROR - 2022-12-13 19:22:40 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-12-13 19:22:40 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 D:\DEVELOPMENT\Projects\fipex-ci\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\DEVELOPMENT\Projects\fipex-ci\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\DEVELOPMENT\Projects\fipex-ci\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\DEVELOPMENT\Projects\fipex-ci\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 D:\DEVELOPMENT\Projects\fipex-ci\app\Controllers\Product.php(19): CodeIgniter\BaseModel->findAll()
+#5 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(832): App\Controllers\Product->index()
+#6 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#7 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\DEVELOPMENT\Projects\fipex-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\DEVELOPMENT\Projects\fipex-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\DEVELOPMENT\\...')
+#10 {main}
+ERROR - 2022-12-13 19:27:04 --> Unknown column 'description' in 'field list'
+CRITICAL - 2022-12-13 19:48:56 --> array_map(): Expected parameter 2 to be an array, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_map(): Ex...', 'D:\\DEVELOPMENT\\...', 21, Array)
+#1 D:\DEVELOPMENT\Projects\fipex-ci\app\Controllers\Product.php(21): array_map(Object(Closure), Object(App\Models\ProductModel))
+#2 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(832): App\Controllers\Product->index()
+#3 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#4 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\DEVELOPMENT\Projects\fipex-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\DEVELOPMENT\Projects\fipex-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\DEVELOPMENT\\...')
+#7 {main}
+CRITICAL - 2022-12-13 19:49:32 --> syntax error, unexpected '}'
+#0 D:\DEVELOPMENT\Projects\fipex-ci\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\DEVELOPMENT\\...')
+#1 D:\DEVELOPMENT\Projects\fipex-ci\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\DEVELOPMENT\Projects\fipex-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\DEVELOPMENT\Projects\fipex-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\DEVELOPMENT\\...')
+#9 {main}
+ERROR - 2022-12-13 20:00:50 --> Unknown column 'type' in 'field list'
+ERROR - 2022-12-13 20:01:45 --> Unknown column 'description' in 'field list'
+ERROR - 2022-12-13 20:02:04 --> Unknown column 'description' in 'field list'
+ERROR - 2022-12-13 20:09:48 --> Duplicate entry 'jasljdlasj' for key 'PRIMARY'
+CRITICAL - 2022-12-13 20:18:53 --> Allowed fields must be specified for model: App\Models\Product
+#0 D:\DEVELOPMENT\Projects\fipex-ci\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Prod...')
+#1 D:\DEVELOPMENT\Projects\fipex-ci\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 D:\DEVELOPMENT\Projects\fipex-ci\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 D:\DEVELOPMENT\Projects\fipex-ci\app\Models\Product.php(75): CodeIgniter\Model->insert(Array)
+#4 D:\DEVELOPMENT\Projects\fipex-ci\app\Controllers\ProductController.php(46): App\Models\Product->addProduct()
+#5 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(832): App\Controllers\ProductController->add()
+#6 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#7 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\DEVELOPMENT\Projects\fipex-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\DEVELOPMENT\Projects\fipex-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\DEVELOPMENT\\...')
+#10 {main}
+CRITICAL - 2022-12-13 20:20:34 --> Allowed fields must be specified for model: App\Models\Product
+#0 D:\DEVELOPMENT\Projects\fipex-ci\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Prod...')
+#1 D:\DEVELOPMENT\Projects\fipex-ci\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 D:\DEVELOPMENT\Projects\fipex-ci\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 D:\DEVELOPMENT\Projects\fipex-ci\app\Models\Product.php(84): CodeIgniter\Model->insert(Array)
+#4 D:\DEVELOPMENT\Projects\fipex-ci\app\Controllers\ProductController.php(46): App\Models\Product->addProduct()
+#5 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(832): App\Controllers\ProductController->add()
+#6 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#7 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\DEVELOPMENT\Projects\fipex-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\DEVELOPMENT\Projects\fipex-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\DEVELOPMENT\\...')
+#10 {main}
+ERROR - 2022-12-13 20:20:52 --> Unknown column 'exhibition_id' in 'field list'
+ERROR - 2022-12-13 20:21:37 --> Unknown column 'exhibition_id' in 'field list'
+ERROR - 2022-12-13 20:22:21 --> Unknown column 'exhibition_id' in 'field list'
+CRITICAL - 2022-12-13 20:23:42 --> syntax error, unexpected 'public' (T_PUBLIC), expecting end of file
+#0 D:\DEVELOPMENT\Projects\fipex-ci\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\DEVELOPMENT\\...')
+#1 D:\DEVELOPMENT\Projects\fipex-ci\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Prod...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Prod...')
+#3 D:\DEVELOPMENT\Projects\fipex-ci\app\Controllers\ProductController.php(18): spl_autoload_call('App\\Models\\Prod...')
+#4 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(832): App\Controllers\ProductController->index()
+#5 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#6 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\DEVELOPMENT\Projects\fipex-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\DEVELOPMENT\Projects\fipex-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\DEVELOPMENT\\...')
+#9 {main}
+ERROR - 2022-12-13 20:24:11 --> Unknown column 'exhibition_id' in 'field list'
+ERROR - 2022-12-13 20:25:03 --> Unknown column 'exhibition_id' in 'field list'
+ERROR - 2022-12-13 20:25:04 --> Unknown column 'exhibition_id' in 'field list'
+ERROR - 2022-12-13 20:25:16 --> Unknown column 'exhibition_id' in 'field list'
+ERROR - 2022-12-13 20:25:19 --> Unknown column 'exhibition_id' in 'field list'
+ERROR - 2022-12-13 20:25:28 --> Unknown column 'exhibition_id' in 'field list'
+ERROR - 2022-12-13 20:25:31 --> Unknown column 'exhibition_id' in 'field list'
+CRITICAL - 2022-12-13 20:26:04 --> There is no data to insert.
+#0 D:\DEVELOPMENT\Projects\fipex-ci\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 D:\DEVELOPMENT\Projects\fipex-ci\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(NULL, 'insert')
+#2 D:\DEVELOPMENT\Projects\fipex-ci\system\Model.php(625): CodeIgniter\BaseModel->insert(NULL, true)
+#3 D:\DEVELOPMENT\Projects\fipex-ci\app\Controllers\ProductController.php(46): CodeIgniter\Model->insert()
+#4 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(832): App\Controllers\ProductController->add()
+#5 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#6 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\DEVELOPMENT\Projects\fipex-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\DEVELOPMENT\Projects\fipex-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\DEVELOPMENT\\...')
+#9 {main}
+ERROR - 2022-12-13 20:26:32 --> Unknown column 'exhibition_id' in 'field list'
+ERROR - 2022-12-13 20:29:59 --> Duplicate entry 'asad' for key 'PRIMARY'
+CRITICAL - 2022-12-13 20:36:59 --> Call to undefined function App\Controllers\int()
+#0 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(832): App\Controllers\ProductController->index()
+#1 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#2 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\DEVELOPMENT\Projects\fipex-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 D:\DEVELOPMENT\Projects\fipex-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\DEVELOPMENT\\...')
+#5 {main}
+CRITICAL - 2022-12-13 20:39:27 --> syntax error, unexpected '}'
+#0 D:\DEVELOPMENT\Projects\fipex-ci\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\DEVELOPMENT\\...')
+#1 D:\DEVELOPMENT\Projects\fipex-ci\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\DEVELOPMENT\Projects\fipex-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\DEVELOPMENT\Projects\fipex-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\DEVELOPMENT\\...')
+#9 {main}
+CRITICAL - 2022-12-13 20:42:35 --> syntax error, unexpected '}', expecting ';' or ','
+#0 D:\DEVELOPMENT\Projects\fipex-ci\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\DEVELOPMENT\\...')
+#1 D:\DEVELOPMENT\Projects\fipex-ci\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 D:\DEVELOPMENT\Projects\fipex-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\DEVELOPMENT\Projects\fipex-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\DEVELOPMENT\Projects\fipex-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\DEVELOPMENT\\...')
+#9 {main}
